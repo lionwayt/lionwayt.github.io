@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+header {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 20px;
+}
+
+.logo {
+  position: relative;
+  left: 30px;
+  text-align: left;
+  font-size: 40px;
+  color: white;
+  font-family: monospace;
+  bottom: 150px;
+  -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0, 0, 0, 0.2));
+}
+.logo span {
+  position: relative;
+  display: inline-block;
+  text-transform: uppercase;
+  animation: logo 1s infinite;
+  animation-delay: calc(0.1s * var(--i));
+}
+@keyframes logo {
+  0%,
+  40%,
+  100% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translateY(-20px);
+  }
+}
+
+h4 {
+  position: relative;
+  color: white;
+  text-align: left;
+  left: 30px;
+  letter-spacing: 4px;
+  font-style: normal;
+  font-size: 20px;
+  bottom: 100px;
+  padding: 5px;
+}
+h5 {
+  text-align: center;
+  color: bisque;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  position: relative;
+  font-size: 25px;
+}
+h6 {
+  text-align: center;
+  color: bisque;
+  position: relative;
+  font-size: 15px;
+  left: 45px;
+}
+
+.home {
+  position: relative;
+  text-align: left;
+  left: 30px;
+  margin-top: 150px;
+  bottom: 150px;
+}
+
+.home a {
+  text-decoration: none;
+  color: rgb(104, 72, 72);
+  font-size: 30px;
+  font-weight: bolder;
+  background-color: rgba(255, 255, 255, 0.712);
+  padding: 20px 45px;
+}
+
+.home a:hover {
+  color: whitesmoke;
+  background-color: #2d56a8;
+  transition: 0.5s;
+}
+.btn {
+  animation: wiggle 2s linear infinite;
+}
+
+@keyframes wiggle {
+  0%,
+  7% {
+    transform: rotateZ(0);
+  }
+  15% {
+    transform: rotateZ(-15deg);
+  }
+  20% {
+    transform: rotateZ(10deg);
+  }
+  25% {
+    transform: rotateZ(-10deg);
+  }
+  30% {
+    transform: rotateZ(6deg);
+  }
+  35% {
+    transform: rotateZ(-4deg);
+  }
+  40%,
+  100% {
+    transform: rotateZ(0);
+  }
+}
+.btn {
+  left: calc(50% - 3em);
+  right: calc(50% - 2em);
+  transform-origin: 50% 5em;
+  background: linear-gradient(top, #555, #333);
+}

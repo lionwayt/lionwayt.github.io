@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/explore.css" />
+    <title>explore</title>
+  </head>
+  <body>
+    <ul class="topnav">
+      <li><a class="active" href="#home">Explore</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li class="right">HIWOT MOLALIGN</li>
+    </ul>
+    <div class="home">
+      <h2 class="my">My Works</h2>
+      <h3>E-commerce Web Frontend Development using React</h3>
+
+      <div class="img">
+        <img src="image/web.png" alt="e-commerce" width="400" height="200" />
+      </div>
+      <div class="img">
+        <img src="image/web.png" alt="e-commerce" width="400" height="200" />
+      </div>
+      <div class="img">
+        <img src="image/web.png" alt="e-commerce" width="400" height="200" />
+      </div>
+    </div>
+    <div class="home2">
+      <h3>Desktop Application using C#</h3>
+
+      <div class="img">
+        <img src="image/app.png" alt="vital" width="400" height="200" />
+      </div>
+      <div class="img">
+        <img src="image/app.png" alt="e-commerce" width="400" height="200" />
+      </div>
+      <div class="img">
+        <img src="image/app.png" alt="e-commerce" width="400" height="200" />
+      </div>
+    </div>
+    <div class="newsContainer">
+      <h1>Newsletter</h1>
+      <h2>Get timely updates from your favorite  products.</h2>
+      <div class="InputContainer">
+       <Input placeholder="Your email"/> 
+       <Button>
+          Send
+          </Button>
+      </div>
+  </div>
+    <button id="btt" onclick="bttf()">^</button>
+    <footer>
+        <p>&#169 2023,  <a href="index.html" style="color:white">Hiwot Molalign</a></p>
+    </footer>
+    <script>
+      btn = document.getElementById("btt");
+      window.onscroll = () => {
+          if (document.documentElement.scrollTop > 400) {
+              btn.style.display = "block";
+          } else {
+              btn.style.display = "none";
+          }
+      }
+      function bttf() {
+          window.scrollTo(0, 0);
+      }
+  </script>
+  </body>
+</html>

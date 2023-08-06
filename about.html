@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/about.css" />
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+
+    <title>about</title>
+  </head>
+  <body>
+    <ul class="topnav">
+      <li><a href="explore.html">Explore</a></li>
+      <li><a class="active" href="#news">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li class="right">HIWOT MOLALIGN</li>
+    </ul>
+    
+    <div class="container-fluid stories">
+      <div class="row justify-content-center">
+         <div class="col-md-8  col-sm-12 ">
+            <p class="me">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Nulla porttitor accumsan tincidunt. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+               <br><br>
+               <a href="about.html"><span class="bold">MAURIS BLANDIT ALIQUET ELIT</span></a>
+            </p>
+         </div>
+      </div>
+   </div>
+
+    <main>
+      <div id="serv">
+        <h2 class="title"></h2>
+        <div class="pr1">
+          <div class="col1">
+            <img src="image/me.jpg" alt="" />
+          </div>
+          <div class="col2">
+            <h3><b>About Me</b></h3>
+            <p class="me">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis molestiae vitae, aut possimus nobis odio corrupti culpa neque incidunt reprehenderit in dolores accusantium unde modi id mollitia quos quibusdam aperiam!
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo vero, nihil cum dolores vitae maiores inventore labore dolorem odio blanditiis animi quae. Impedit deleniti animi nemo, illo voluptatum qui excepturi!
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <section class="bio">
+      <h3><b>Biography</b></h3>
+      <pre>
+        
+        Name:          Hiwot Molalign
+
+        Email:         hiwotmolalign2@gmail.com 
+
+        Country:       Ethiopia
+
+        City:          Addis Ababa
+
+        Degree:        Bachelor of Computer Science
+
+      </pre>
+    </section>
+
+<div class="skill">
+  
+    <h3><b>My Skills</b></h3><br><br>
+    <p></p>
+  
+  <p>C# </p>
+    <div class="progress">
+      <div id="myBar" class="progressbar green" style="width:85%">
+        <div class="center text-white">85%</div>
+      </div>
+    </div><br>
+    <p> Java </p>
+    <div class="progress">
+      <div id="myBar" class="progressbar green" style="width:55%">
+        <div class="center text-white">55%</div>
+      </div>
+    </div><br>
+    <p>JavaScript|React|Node.js</p>
+    <div class="progress">
+      <div id="myBar" class="progressbar green" style="width:75%">
+        <div class="center text-white">75%</div>
+      </div>
+    </div><br>
+    <p> Php </p>
+    <div class="progress">
+      <div id="myBar" class="progressbar green" style="width:85%">
+        <div class="center text-white">85%</div>
+      </div>
+    </div><br>
+    <p>Laravel </p>
+    <div class="progress">
+      <div id="myBar" class="progressbar green" style="width:65%">
+        <div class="center text-white">65%</div>
+      </div>
+    </div><br>
+    <p> Database (MySql, PostgreSql, MongoDb) </p>
+    <div class="progress">
+      <div id="myBar" class="progressbar green" style="width:95%">
+        <div class="center text-white">95%</div>
+      </div>
+    </div><br>
+</div>
+
+
+
+
+    <button id="btt" onclick="bttf()">^</button>
+    <footer>
+        <p>&#169 2023 , by <a href="index.html" style="color:white">Hiwot Molalign</a></p>
+    </footer>
+    <script>
+      btn = document.getElementById("btt");
+      window.onscroll = () => {
+          if (document.documentElement.scrollTop > 400) {
+              btn.style.display = "block";
+          } else {
+              btn.style.display = "none";
+          }
+      }
+      function bttf() {
+          window.scrollTo(0, 0);
+      }
+      
+     
+      
+  </script>
+
+  
+  
+
+  </body>
+</html>

@@ -9,7 +9,6 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  background-color: rgba(0, 0, 0, 0.8);
   overflow-x: hidden;
 }
 
@@ -52,13 +51,6 @@ ul.topnav li.right {
   padding: 14px 16px;
   text-decoration: none;
 }
-.title {
-  margin-top: 0%;
-  font-size: 50px;
-  text-align: center;
-  font-family: "Times New Roman", Times, serif;
-  color: #e55167;
-}
 .abt {
   position: relative;
   top: 20px;
@@ -69,17 +61,8 @@ ul.topnav li.right {
   width: 50%;
 }
 .container-fluid {
-  margin-top: 10px;
-  background-color: white;
-  box-shadow: 10px 3px 5px grey;
-  position: relative;
-  width: 90%;
-}
-.stories {
-  font-size: 1.2em;
-  text-align: center;
-  padding-top: 5rem;
-  padding-bottom: 10rem;
+  display: block;
+  margin-top: 0px;
 }
 
 #serv .pr1 .col1 img {
@@ -92,25 +75,53 @@ ul.topnav li.right {
   margin: 10% 5%;
 }
 
-.me {
-  animation: 1s anim-col2 ease-out;
+.slide img {
+  width: 100vw;
+  height: 91vh;
+  object-position: center;
+  display: none;
+  animation: ch 1s ease;
 }
-@keyframes anim-col2 {
+
+.active img {
+  display: block;
+}
+
+.slide {
+  position: relative;
+}
+
+@keyframes ch {
   0% {
-    opacity: 0;
-    transform: translateY(80%);
+    transform: scale(1);
+    opacity: 0.8;
   }
-  20% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-    transform: translateY(0%);
-  }
+
   100% {
+    transform: scale(1);
     opacity: 1;
-    transform: translateY(0%);
   }
+}
+.container-fluid .btn {
+  position: absolute;
+  left: 42%;
+  top: 74%;
+}
+
+.container-fluid a {
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+  font-weight: bolder;
+  background-color: #2d56a8;
+  padding: 20px 45px;
+  border-radius: 12px;
+}
+
+.container-fluid a:hover {
+  color: #2d56a8;
+  background-color: rgba(255, 255, 255, 0.712);
+  transition: 0.5s;
 }
 #serv .pr1 .col2 {
   display: inline-block;
@@ -227,6 +238,13 @@ footer a:hover {
   .skill h3 {
     right: 0;
   }
+  .slide img {
+    width: 100vw;
+    height: 61vh;
+    object-position: center;
+    display: none;
+    animation: ch 1s ease;
+  }
 }
 @media screen and (max-width: 425px) {
   #serv .pr1 .col1 img {
@@ -250,5 +268,19 @@ footer a:hover {
   }
   .skill h3 {
     right: 0;
+  }
+  .slide img {
+    width: 100vw;
+    height: 51vh;
+    object-position: center;
+    display: none;
+    animation: ch 1s ease;
+  }
+  .active img {
+    display: block;
+  }
+  .container-fluid .btn {
+    left: 28%;
+    top: 60%;
   }
 }

@@ -17,14 +17,15 @@
       <li class="right">HIWOT MOLALIGN</li>
     </ul>
     
-    <div class="container-fluid stories">
-      <div class="row justify-content-center">
-         <div class="col-md-8  col-sm-12 ">
-            <p class="me">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Nulla porttitor accumsan tincidunt. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-               <br><br>
-               <a href="about.html"><span class="bold">MAURIS BLANDIT ALIQUET ELIT</span></a>
-            </p>
-         </div>
+    <div class="container-fluid ">
+              <div class="slides">
+                <div class="slide active"><img src="image/web-design.jpg" alt="">
+               </div>
+                <div class="slide"><img src="image/29045.jpg" alt=""></div>
+                <div class="slide"><img src="image/technology.jpg" alt=""></div>
+                <div class="slide"><img src="image/10245825_4411766.jpg" alt=""></div>
+               
+                <a href="#serv" class="btn">About</a>
       </div>
    </div>
 
@@ -33,13 +34,19 @@
         <h2 class="title"></h2>
         <div class="pr1">
           <div class="col1">
-            <img src="image/me.jpg" alt="" />
+            <img src="image/me (2).jpeg" alt="" />
           </div>
           <div class="col2">
             <h3><b>About Me</b></h3>
             <p class="me">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis molestiae vitae, aut possimus nobis odio corrupti culpa neque incidunt reprehenderit in dolores accusantium unde modi id mollitia quos quibusdam aperiam!
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo vero, nihil cum dolores vitae maiores inventore labore dolorem odio blanditiis animi quae. Impedit deleniti animi nemo, illo voluptatum qui excepturi!
+              As a recently graduated computer science student, I am highly passionate about the field of technology.
+               Throughout my educational journey, I have gained a solid foundation in various areas of computer science,
+                including web development, desktop application development, networking, Android app development,
+                 and database management.
+I am a quick learner with a strong problem-solving mindset.
+ I enjoy working collaboratively in a team environment and am motivated to continuously expand my skill set.
+  I am also able to work independently and efficiently, ensuring timely completion of tasks.
+
             </p>
           </div>
         </div>
@@ -70,14 +77,14 @@
   
   <p>C# </p>
     <div class="progress">
-      <div id="myBar" class="progressbar green" style="width:85%">
-        <div class="center text-white">85%</div>
+      <div id="myBar" class="progressbar green" style="width:95%">
+        <div class="center text-white">95%</div>
       </div>
     </div><br>
     <p> Java </p>
     <div class="progress">
-      <div id="myBar" class="progressbar green" style="width:55%">
-        <div class="center text-white">55%</div>
+      <div id="myBar" class="progressbar green" style="width:90%">
+        <div class="center text-white">90%</div>
       </div>
     </div><br>
     <p>JavaScript|React|Node.js</p>
@@ -114,6 +121,23 @@
         <p>&#169 2023 , by <a href="index.html" style="color:white">Hiwot Molalign</a></p>
     </footer>
     <script>
+       let slides = document.querySelector('.slides').children;
+        let total = slides.length;
+        let index = 0;
+        window.setInterval(function () {
+            index++;
+            if (index == total) {
+                index = 0;
+            } else {
+                if (index >= 4) {
+                    index = 0;
+                }
+            }
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].classList.remove("active");
+            }
+            slides[index].classList.add("active");
+        }, 4000)
       btn = document.getElementById("btt");
       window.onscroll = () => {
           if (document.documentElement.scrollTop > 400) {

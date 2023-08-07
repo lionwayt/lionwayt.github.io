@@ -209,6 +209,19 @@ footer a:hover {
   .home2 h3 {
     left: 15px;
   }
+  .newsContainer h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+  }
+  .newsContainer h2 {
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .InputContainer {
+    width: 80%;
+  }
 }
 @media screen and (max-width: 425px) {
   div.img {
@@ -218,5 +231,18 @@ footer a:hover {
   }
   #serv .pr1 .col2 {
     display: inline;
+  }
+  .newsContainer h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+  }
+  .newsContainer h2 {
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .InputContainer {
+    width: 80%;
   }
 }

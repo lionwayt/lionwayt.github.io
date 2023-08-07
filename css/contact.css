@@ -164,6 +164,31 @@ fieldset {
   color: white;
   margin-left: 100px;
 }
+/* social */
+.social {
+  margin: 200px;
+}
+.social ul {
+  display: flex;
+  list-style: none;
+}
+.social li {
+  margin: 40px;
+}
+.social li img {
+  width: 50%;
+}
+.phone {
+  margin-left: 20px;
+}
+.ph {
+  text-decoration: none;
+  color: darkgray;
+  font-size: 28px;
+  font-weight: 300;
+  margin: 10px;
+  padding: 10px;
+}
 /* about us*/
 .newsContainer {
   top: 200px;
@@ -217,6 +242,48 @@ fieldset {
     margin-left: 0;
     text-align: center;
   }
+  #name {
+    width: 120%;
+    margin-left: 20px;
+  }
+  #email {
+    width: 120%;
+    margin-left: 20px;
+  }
+
+  #sbj {
+    width: 120%;
+    margin-left: 20px;
+  }
+
+  #msg {
+    width: 120%;
+    margin-left: 20px;
+  }
+  .newsContainer h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+  }
+  .newsContainer h2 {
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .InputContainer {
+    width: 80%;
+  }
+  .social {
+    margin: 0;
+    margin-top: 230px;
+  }
+  .social li {
+    margin: 0px;
+    margin-left: 20px;
+  }
+  .social img {
+    width: 50%;
+  }
 }
 @media screen and (max-width: 425px) {
   .logo {
@@ -224,6 +291,48 @@ fieldset {
     left: 10px;
   }
   fieldset {
-    margin-left: -165px;
+    margin-left: -100px;
+  }
+  #name {
+    width: 120%;
+    margin-left: 25px;
+  }
+  #email {
+    width: 120%;
+    margin-left: 25px;
+  }
+
+  #sbj {
+    width: 120%;
+    margin-left: 25px;
+  }
+
+  #msg {
+    width: 120%;
+    margin-left: 25px;
+  }
+  .newsContainer h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+  }
+  .newsContainer h2 {
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .InputContainer {
+    width: 80%;
+  }
+  .social {
+    margin: 0;
+    margin-top: 230px;
+  }
+  .social li {
+    margin: 0px;
+    margin-left: 20px;
+  }
+  .social img {
+    width: 50%;
   }
 }

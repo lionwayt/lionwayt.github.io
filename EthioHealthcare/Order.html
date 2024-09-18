@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ethio Healthcare</title>
+    <link rel="stylesheet" href="./style/style.css" />
+    <link
+      href="./style/fontawesome-free-6.0.0-beta3-web/css/all.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="order_page">
+      <h1>Make <span class="scnd"></span> Appointments</h1>
+      <!-- Script for validation & calculating total price-->
+      <script>
+        function valid() {
+          if (
+            document.getElementById("pn").value.length > 10 &&
+            document.getElementById("pn").value.length < 10
+          ) {
+            alert("Invalid Phone number");
+          }
+          if (document.getElementById("ap").value == "top") {
+            alert("You must select one appointment from the list.");
+          }
+        }
+        function calc() {
+          let check_up = 120;
+          let consultation = 300;
+          let Follow_up = 270;
+          let Diagnostic = 300;
+          let Surgery = 300;
+          let Therapy = 100;
+          if (document.getElementById("ap").value == "General check-up") {
+            document.getElementById("tt").value =
+              document.getElementById("it").value * check_up;
+          }
+          if (document.getElementById("ap").value == "consultation") {
+            document.getElementById("tt").value =
+              document.getElementById("it").value * consultation;
+          }
+          if (document.getElementById("ap").value == "Follow_up") {
+            document.getElementById("tt").value =
+              document.getElementById("it").value * Follow_up;
+          }
+          if (document.getElementById("ap").value == "Diagnostic") {
+            document.getElementById("tt").value =
+              document.getElementById("it").value * Diagnostic;
+          }
+          if (document.getElementById("ap").value == "Surgery") {
+            document.getElementById("tt").value =
+              document.getElementById("it").value * Surgery;
+          }
+          if (document.getElementById("ap").value == "Therapy") {
+            document.getElementById("tt").value =
+              document.getElementById("it").value * Therapy;
+          }
+        }
+      </script>
+    </header>
+
+    <div class="ord-form">
+      <form action="#">
+        <input
+          name="name"
+          type="text"
+          placeholder="Name"
+          required
+          class="inp"
+        />
+        <input
+          name="email"
+          type="email"
+          placeholder="E-Mail"
+          required
+          class="inp"
+        />
+        <input
+          name="ph_no"
+          type="text"
+          placeholder="Phone Number"
+          required
+          class="inp"
+          id="pn"
+        />
+        <input
+          name="Address"
+          type="text"
+          placeholder="Address"
+          required
+          class="inp"
+        />
+        <select name="Appointment" id="ap" class="inp">
+          <option value="top">Select Your Appointment</option>
+          <option value="check-up">General check-up</option>
+          <option value="consultation">Specialist consultation</option>
+          <option value="Follow_up">Follow-up appointments</option>
+          <option value="Diagnostic">Diagnostic tests</option>
+          <option value="Surgery">Surgery consultations</option>
+          <option value="Therapy">Therapy sessions</option>
+        </select>
+        <input
+          name="date"
+          type="date"
+          placeholder="date"
+          required
+          class="inp"
+          id="it"
+          min="0"
+        />
+
+        <input
+          name="totpr"
+          type="number"
+          placeholder="Total Price"
+          required
+          class="inp"
+          readonly
+          id="tt"
+        />
+        <input
+          type="button"
+          value="Calculate Price"
+          class="inp cal"
+          onclick="calc()"
+        />
+        <input type="submit" value="BOOK" class="inp sen" onclick="valid()" />
+      </form>
+    </div>
+
+    <footer class="footer">
+      <div class="col col-1">
+        <h4 class="h4b4">On Social Medias</h4>
+        <ul>
+          <li>
+            <a href="http://www.facebook.com" target="_blank"
+              ><i class="fab fa-facebook-f"></i>&nbsp;facebook</a
+            >
+          </li>
+          <li>
+            <a href="http://www.twitter.com" target="_blank"
+              ><i class="fab fa-twitter"></i>&nbsp;twitter</a
+            >
+          </li>
+          <li>
+            <a href="http://www.instagram.com" target="_blank"
+              ><i class="fab fa-instagram"></i>&nbsp; instagram</a
+            >
+          </li>
+          <li>
+            <a href="http://www.youtube.com" target="_blank"
+              ><i class="fab fa-youtube"></i>&nbsp;youtube</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <div class="col col-2">
+        <ul>
+          <h4>Navigation</h4>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./index.html#ab">About</a></li>
+          <li><a href="./index.html#or">Appointment</a></li>
+          <li><a href="./index.html#gal">Blog</a></li>
+          <li><a href="./index.html#tes">Testimonials</a></li>
+          <li><a href="./index.html#cont">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="col col-3">
+        <h4>Address</h4>
+        <ul>
+          <li><i class="fa fa-phone"></i> &nbsp;+251 913456543</li>
+          <li>
+            <i class="fa fa-envelope-open"></i> &nbsp;ethiohealthcare@gmail.com
+          </li>
+          <li><i class="fa fa-globe"></i> &nbsp;www.ethiohealthcare.com</li>
+          <li><i class="fa fa-map-marker"></i> &nbsp;A.A, Ethiopia</li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>

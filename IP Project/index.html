@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ethio Healthcare</title>
+    <link rel="stylesheet" href="./style/style.css" />
+    <link
+      href="./style/fontawesome-free-6.0.0-beta3-web/css/all.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <script>
+    function hide() {
+      document.getElementById("nav").style.display = "none";
+      document.getElementById("open").style.display = "block";
+      hide();
+    }
+    function dis() {
+      document.getElementById("nav").style.display = "block";
+      document.getElementById("open").style.display = "none";
+    }
+  </script>
+  <body>
+    <!-- Start Of the home page -->
+
+    <div id="home">
+      <header>
+        <div class="logo">
+          <h1>Ethio <span class="secndtxt">Healthcare</span></h1>
+        </div>
+        <li>
+          <i class="fa fa-pills" id="open" onclick="dis()"></i>
+        </li>
+        <nav id="nav">
+          <ul>
+            <li><i class="fa fa-close" id="close" onclick="hide()"></i></li>
+
+            <li><a href="#home">Home</a></li>
+            <li><a href="#ab">About</a></li>
+            <li><a href="#or">Services</a></li>
+            <li><a href="#gal">Blog</a></li>
+            <li><a href="#tes">Testimonials</a></li>
+            <li><a href="#cont">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div class="front_pg">
+        <p>Make <span></span> Appointments!</p>
+        <a href="#order" class="btn-order">Booking Now</a>
+      </div>
+    </div>
+    <!-- End of the home page-->
+
+    <main>
+      <!-- Start of the about page-->
+      <div id="about">
+        <h2 id="ab">About</h2>
+        <div class="text_side">
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos,
+            cupiditate ab tenetur blanditiis nesciunt velit error incidunt rem,
+            eius, aut officiis. At ullam enim quia pariatur porro labore numquam
+            voluptatem? Lorem ipsum dolor sit amet consectetur, adipisicing
+            elit. Ad voluptatibus, fugiat pariatur inventore voluptatem dolores
+            delectus architecto porro odio molestiae iusto non veniam facere
+            dolorum velit rerum debitis natus nobis. Lorem ipsum dolor, sit amet
+            consectetur adipisicing elit. Eos, cupiditate ab tenetur blanditiis
+            nesciunt velit error incidunt rem, eius, aut officiis. At ullam enim
+            quia pariatur porro labore numquam voluptatem? Lorem ipsum dolor sit
+            amet consectetur, adipisicing elit. Ad voluptatibus, fugiat pariatur
+            inventore voluptatem dolores delectus architecto porro odio
+            molestiae iusto non veniam facere dolorum velit rerum debitis natus
+            nobis. quia pariatur porro labore numquam voluptatem? Lorem ipsum
+            dolor sit amet consectetur, adipisicing elit. Ad voluptatibus,
+            fugiat pariatur inventore voluptatem dolores delectus architecto
+            porro odio molestiae iusto non veniam facere dolorum velit rerum
+            debitis natus nobis. quia pariatur porro labore numquam voluptatem?
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad
+            voluptatibus, fugiat pariatur inventore voluptatem dolores delectus
+            architecto porro odio molestiae iusto non veniam facere dolorum
+            velit rerum debitis natus nobis.
+          </p>
+        </div>
+        <div class="image-side">
+          <img src="./images/abt.jpg" alt="about Photo" class="abt-img" />
+        </div>
+      </div>
+      <!-- End of the about page -->
+      <a href="#home" class="btt"><i class="fa fa-arrow-alt-circle-up"></i></a>
+      <!-- Start of the order page-->
+      <div id="order">
+        <h2 id="or">Services...</h2>
+        <div class="tcol-list">
+          <div class="order-list">
+            <img src="./images/general.jpg" alt="checkup" />
+            <h3>General check-up</h3>
+            <p class="detail">
+              This is a routine appointment for a general health examination,
+              where the healthcare provider assesses the patient's overall
+              well-being.
+            </p>
+            <p class="price">$100</p>
+          </div>
+
+          <div class="order-list">
+            <img src="./images/check.jpg" alt="consultation" />
+            <h3>Specialist consultation</h3>
+            <p class="detail">
+              Patients may have appointments with specific specialists based on
+              their medical condition or symptoms, such as cardiologists,
+              dermatologists, neurologists, etc.
+            </p>
+            <p class="price">$100</p>
+          </div>
+
+          <div class="order-list">
+            <img src="./images/therapy.jpg" alt="follow-up" />
+            <h3>Follow-up appointments</h3>
+            <p class="detail">
+              After a treatment or procedure, patients may need to schedule
+              follow-up appointments to monitor their progress and discuss any
+              concerns or issues.
+            </p>
+            <p class="price">$100</p>
+          </div>
+
+          <div class="order-list nd">
+            <img src="./images/oth.jpg" alt="Diagnostic" />
+            <h3>Diagnostic tests</h3>
+            <p class="detail">
+              Appointments for diagnostic tests such as blood tests, X-rays, MRI
+              scans, ultrasounds, etc., are common to help diagnose or monitor a
+              particular medical condition.
+            </p>
+            <p class="price">$100</p>
+          </div>
+
+          <div class="order-list nd">
+            <img src="./images/psy.jpg" alt="Surgery" />
+            <h3>Surgery consultations</h3>
+            <p class="detail">
+              Patients who require surgical interventions may have pre-surgery
+              consultations with the surgeon to discuss the procedure, risks,
+              and post-operative care.
+            </p>
+            <p class="price">$100</p>
+          </div>
+
+          <div class="order-list nd">
+            <img src="./images/cardio.jpg" alt="Therapy" />
+            <h3>Therapy sessions</h3>
+            <p class="detail">
+              For patients with physical or mental health conditions,
+              appointments with therapists or psychologists can be scheduled for
+              therapy sessions, such as physical therapy, occupational therapy,
+              or counseling.
+            </p>
+            <p class="price">$100</p>
+          </div>
+        </div>
+        <center><a href="Order.html" class="or-btn">Booking Now</a></center>
+      </div>
+
+      <!-- End of the order page-->
+
+      <!-- Start of the Gallary Page-->
+      <div id="gallary">
+        <h2 id="gal">Blogs</h2>
+        <div class="contain">
+          <div class="galar-img">
+            <img src="./images/galary/1.jpg" alt="" />
+            <p class="galar-disc"></p>
+          </div>
+
+          <div class="galar-img">
+            <img src="./images/galary/2.jpg"" alt="">
+            <p class="galar-disc"></p>
+          </div>
+
+          <div class="galar-img">
+            <img src="./images/galary/3.jpg"" alt="">
+            <p class="galar-disc"></p>
+          </div>
+
+          <div class="galar-img">
+            <img src="./images/galary/4.jpg"" alt="">
+            <p class="galar-disc"></p>
+          </div>
+
+          <div class="galar-img">
+            <img src="./images/galary/5.jpg"" alt="">
+            <p class="galar-disc"></p>
+          </div>
+
+          <div class="galar-img">
+            <img src="./images/galary/6.jpg"" alt="">
+            <p class="galar-disc"></p>
+          </div>
+        </div>
+      </div>
+      <!-- End of gallary page-->
+
+      <!-- Start of testimonial page-->
+      <div id="testimonial">
+        <h2 id="tes">Testimonials</h2>
+        <div class="tescon">
+          <div class="box">
+            <img src="./images/peps/tes1" alt="" />
+            <h4>testimonial</h4>
+            <i class="fas fa-quote-left quote"></i>
+            <p>
+              Lorem aliasry ipsum dolor sits ametans, consectetur adipisicing
+              elitits. Expedita reiciendis itaque placeat thuratu, quasi yiuos
+              repellendus repudiandae deleniti ideas fuga molestiae, alias.
+            </p>
+            <i class="fas fa-quote-right quote"></i>
+          </div>
+
+          <div class="box">
+            <img src="./images/peps/tes2" alt="" />
+            <h4>testimonial</h4>
+            <i class="fas fa-quote-left quote"></i>
+            <p>
+              Lorem aliasry ipsum dolor sits ametans, consectetur adipisicing
+              elitits. Expedita reiciendis itaque placeat thuratu, quasi yiuos
+              repellendus repudiandae deleniti ideas fuga molestiae, alias.
+            </p>
+            <i class="fas fa-quote-right quote"></i>
+          </div>
+
+          <div class="box">
+            <img src="./images/peps/tes3" alt="" />
+            <h4>testimonial</h4>
+            <i class="fas fa-quote-left quote"></i>
+            <p>
+              Lorem aliasry ipsum dolor sits ametans, consectetur adipisicing
+              elitits. Expedita reiciendis itaque placeat thuratu, quasi yiuos
+              repellendus repudiandae deleniti ideas fuga molestiae, alias.
+            </p>
+            <i class="fas fa-quote-right quote"></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- Start of contact-->
+      <div id="contact">
+        <h2 id="cont">Contact</h2>
+        <form action="#">
+          <input name="name" type="text" placeholder="Name" required />
+          <input name="name" type="email" placeholder="e-mail" required />
+          <textarea
+            name="comment"
+            cols="30"
+            rows="10"
+            placeholder="Comment"
+          ></textarea>
+          <input type="submit" value="Send" class="btn-send" />
+        </form>
+      </div>
+
+      <!-- End of Contact of page -->
+    </main>
+
+    <footer class="footer">
+      <div class="col col-1">
+        <h4 class="h4b4">On Social Medias</h4>
+        <ul>
+          <li>
+            <a href="http://www.facebook.com" target="_blank"
+              ><i class="fab fa-facebook-f"></i>&nbsp;facebook</a
+            >
+          </li>
+          <li>
+            <a href="http://www.twitter.com" target="_blank"
+              ><i class="fab fa-twitter"></i>&nbsp;twitter</a
+            >
+          </li>
+          <li>
+            <a href="http://www.instagram.com" target="_blank"
+              ><i class="fab fa-instagram"></i>&nbsp; instagram</a
+            >
+          </li>
+          <li>
+            <a href="http://www.youtube.com" target="_blank"
+              ><i class="fab fa-youtube"></i>&nbsp;youtube</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <div class="col col-2">
+        <ul>
+          <h4>Navigation</h4>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#ab">About</a></li>
+          <li><a href="#or">Services</a></li>
+          <li><a href="#gal">Blog</a></li>
+          <li><a href="#tes">Testimonials</a></li>
+          <li><a href="#cont">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="col col-3">
+        <h4>Address</h4>
+        <ul>
+          <li><i class="fa fa-phone"></i> &nbsp;+251 913456543</li>
+          <li>
+            <i class="fa fa-envelope-open"></i> &nbsp;ethiohealthcare@gmail.com
+          </li>
+          <li><i class="fa fa-globe"></i> &nbsp;www.ethiohealthcare.com</li>
+          <li><i class="fa fa-map-marker"></i> &nbsp;A.A, Ethiopia</li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
